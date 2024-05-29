@@ -1,9 +1,8 @@
 body{
     margin: 0;
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
+    font-size: 1rem;
     font-weight: 700;
-    font-style: normal;
     line-height: 1.6;
 }
 
@@ -16,18 +15,64 @@ p{
     font-weight: 400;
     font-size: 1rem;
 }
+
+ul{
+    list-style: none;
+    padding: 0;
+}
 .one{
-    margin:80px;
-    position: relative;
+    margin:6% 6% 2%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.logo{
+    width:15%;
+    padding-right:61% ;
+}
+
+
 .upper-links{
-    position:absolute;
-    right:0px;
+    width:25%;
+}
+
+@media (max-width: 1250px){
+    .logo{
+        padding-right: 20%;
+    }
+
+    .upper-links{
+        font-size: 0.98rem;
+        width: 30%;
+    }
+}
+
+@media (max-width: 1000px){
+    .logo{
+        padding-right: 15%;
+    }
+
+    .upper-links{
+        font-size: 0.98rem;
+        width: 50%;
+    }
+}
+
+
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    margin-left: 2em ;
 }
 
 .header-links{
-    margin-left: 60px;
     text-decoration: none;
 
 }
@@ -35,32 +80,52 @@ p{
 .header-links:hover{
     opacity: 0.7;
 }
-
+/*
 .first-part{
-    margin: 80px;
-    margin-top: 100px;
+    margin: 6%;
+    margin-top: 7%;
 }
 
 .illus-1{
-    height: 456px;
-    margin-left: 30px;
+    width: 49%;
+    margin-left: 2%;
     float:right;
 }
 
 .first-heading{
-    padding-top: 65px;
-    margin-bottom: 10px;
+    padding-top: 6%;
+    margin-bottom: 1%;
+}
+*/
+
+
+.first-part{
+    margin: 5% 6%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.left-1{
+    width: 50%;
+}
+
+.right-1{
+    width: 47%;
+}
+
+.illus-1{
+    width: 100%;
+}
 .btn {
     outline: none;
     border:none;
     border-radius: 4px;
     font-family: "Raleway", sans-serif;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 0.9rem;
     background: hsl(224, 93%, 58%);
-    padding: 16px 50px 16px 50px;
+    padding: 1em 3.1em 1em 3.1em;
 }
   
 .btn:hover {
@@ -68,34 +133,45 @@ p{
 }
 
 .email-btn{
-    padding: 15px 120px 15px 10px;
+    padding: 0.9em 7.5em 0.9em 0.6em;
 }
 
-.second-part{
-    margin:0;
-    padding: 80px;
-    padding-top: 20px;
-    padding-bottom: 130px;
-    background-color: #F9F8FE;
+.curve-div{
+    height: 235px;
 }
-
 .curve{
-    padding-top: 130px;
+    padding-top: 9%;
     max-width: 100%;
     margin: 0;
     border-bottom: solid #F9F8FE;
-    border-bottom-width: 120px;
+    border-bottom-width: 150px;
 }
 
+
+.second-part{
+    margin:0;
+    padding: 3% 6% 7%;
+    background-color: #F9F8FE;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.second-right{
+    width: 41%;
+}
 .illus-2{
-    padding-top: 110px;
-    height: 399px;
-    margin-left: 27px;
-    float: right;
+    width: 100%;
+    
+}
+
+.second-left{
+    width:55%;
 }
 
 .para{
-    width:40%;
+    width:79%;
 }
 
 .flyo-link{
@@ -113,6 +189,7 @@ p{
     opacity: 0.7;
 }
 
+/*
 .feedback{
     margin-top: 70px;
     font-size: 10px;
@@ -135,12 +212,40 @@ p{
 .designation{
     font-size: 9px;
 }
+*/
+
+.feedback{
+    width:50%;
+    background-color: white;
+    border-radius: 3%;
+    margin-top: 6%;
+    padding: 4.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.quotes{
+    width: 5%;
+}
+
+.avatar{
+    border-radius: 100%;
+    padding: 0 3%;
+    width: 15%;
+    float: left;
+}
+
+.designation{
+    font-size: 0.7rem;
+}
 
 .three{
-    padding:50px 80px;
+    padding:50px 6%;
     background-color: hsl(238, 22%, 44%);
     color: white;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 .btn-2{
     outline: none;
@@ -148,9 +253,9 @@ p{
     border-radius: 4px;
     font-family: "Raleway", sans-serif;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 0.9rem;
     background: hsl(224, 93%, 58%);
-    padding: 16px 50px 16px 50px;
+    padding: 1em 3.1em 1em 3.1em;
 
 }
 
@@ -159,36 +264,36 @@ p{
 }
 
 .email-btn-2{
-    padding: 15px 260px 15px 10px;
+    width: 75%;
+    padding: 1.2em;
     margin-bottom: 5px;
 }
 
 .left{
     width: 44%;
-    display:inline-block;
 }
 
 .right{
-    margin-left:200px;
-    width: 30%;
-    display:inline-block;
-    position: absolute;
-    bottom: 100px;
+    margin-top: 5%;
+    width: 40%;
+    
 }
 
 .four{
     background-color: hsl(243, 87%, 12%);
     color: white;
-    height:200px;
-    padding:100px 80px 70px;
+    padding:8% 6% 5%;
     line-height: 2;
-    position: relative;
+}
+
+.col-4{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .contact{
-    display: inline-block;
-    position: absolute;
-    width:31%;
+    width:19%;
 }
 
 .footer-links{
@@ -199,4 +304,62 @@ p{
 
 .footer-links:hover{
     opacity: 0.4;
+}
+
+.social-media{
+    width:13%;
+}
+.media-icons{
+    width:28%;
+}
+
+
+@media (max-width: 600px){
+    .logo {padding-right: 15%;}
+    .upper-links{font-size: 0.9rem;width: 60%;}
+    .first-part{
+        padding-top: 20%;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .left-1{width: 100%;}
+    .right-1{width: 85%;}
+    .email-btn{margin-bottom: 3%;width: 75%;}
+    .btn{width: 98%;}
+    .curve-div{margin-top: 20%;height: 200px;}
+    .second-part{
+        margin-top: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+    .second-left {width: 100%;
+    padding-top: 20%;}
+    .second-right {width: 80%;}
+    .para{
+        width: 100%;
+        text-align: left;
+    }
+    .second-left h2{font-size: 1.5rem;}
+    .feedback{width: 80%;margin:10% auto;text-align: left;}
+    .three{
+        padding: 5% 12% 7%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .left{width: 100%;}
+    .right{width: 100%;}
+    .left h2{font-size:1.5rem ;}
+    .btn-2{
+        width: 82%;
+    }
+    .col-4{
+        height:500px;
+        flex-direction: column;
+    }
+    .contact{width: 100%;}
+    .social-media{
+        margin: 0 auto;
+        width: 40%;
+    }
+
 }
